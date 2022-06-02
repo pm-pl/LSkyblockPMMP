@@ -1,7 +1,7 @@
 -- #! sqlite
 -- # { island
 -- #    { init
-CREATE TABLE IF NOT EXISTS island
+CREATE TABLE IF NOT EXISTS skyblock
 (
     id INTEGER PRIMARY KEY,
     username TEXT,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS island
 -- #        :username string
 -- #        :members string
 -- #        :members bool
-INSERT OR REPLACE INTO island
+INSERT OR REPLACE INTO skyblock
 (
     id,
     username,
@@ -29,8 +29,8 @@ INSERT OR REPLACE INTO island
 -- #    }
 -- #    { select
 -- #        :username string
-SELECT members
-FROM island
+SELECT *
+FROM skyblock
 WHERE username=:username
 -- #    }
 -- #}
