@@ -1,0 +1,6 @@
+name: LSkyblock
+main: locm\lskyblock\LSkyblock
+src-namespace-prefix: locm\lskyblock
+api: 4.0.0
+author: locm-team
+version: 0.1
